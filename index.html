@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>しんじゅくさんぽ Home</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1>しんじゅくさんぽ</h1>
+        </header>
+        <main>
+            <ul id="page-link">
+                <li><a href="#area-1">しんじゅくさんぽ</a></li>
+                <li><a href="#area-2">しんじゅくをおさんぽしよう</a></li>
+                <li><a href="#area-3">どこにゆこう</a></li>
+            </ul>
+            <section class="area" id="area-1">
+                <h2>しんじゅくさんぽ</h2>
+                <div class="slide-items">
+                    <div class="slideshow1">
+                        <img src="images/ss01_centralpark.png" alt="" class="slideshow__photo">
+                        <img src="images/ss05_theknot.png" alt="" class="slideshow__photo photo-hide">
+                        <img src="images/ss09_isetan.png" alt="" class="slideshow__photo photo-hide">
+                    </div>
+                    <div class="slideshow2">
+                        <img src="images/ss02_gyoen.png" alt="" class="slideshow__photo">
+                        <img src="images/ss06_pasuteto.png" alt="" class="slideshow__photo photo-hide">
+                        <img src="images/ss07_newoman.png" alt="" class="slideshow__photo photo-hide">
+                    </div>
+                </div>
+                <!--/area1-->
+            </section>
+            <section class="area" id="area-2">
+                <div class="area-title">
+                    <h2>しんじゅくをおさんぽしよう</h2>
+                </div>
+                <p>乗降客数世界一位の新宿駅周辺観光スポットをまとめました。<br>
+                    それぞれジャンルごとにまとめているので、目的に沿ったスポットが分かるようになっています。<br>
+                    有名な観光スポットから穴場のお散歩スポットまで幅広くご紹介します！<br>
+                    あなたもお気に入りのスポットが見つかるかも…？<br>
+                    さぁ、新宿をおさんぽしてみましょう！
+                </p>
+
+                <!--/area2-->
+            </section>
+            <section class="area" id="area-3">
+                <div class="area-title">
+                    <h2>どこにゆこう</h2>
+                </div>
+                <div class="category-wrap">
+                    <div class="category">
+                        <a href="" class="all" data-filter="all">全て</a>
+                        <a href="" class="park" data-filter="park">公園</a>
+                        <a href="" class="cafe" data-filter="cafe">カフェ</a>
+                        <a href="" class="shop" data-filter="shop">ショッピング</a>
+                        <a href="" class="leisure" data-filter="leisure">レジャー</a>
+                    </div>
+                    <ul class="categorylist">
+                        <li class="park" data-category="park">
+                            <div class="img-box">
+                                <img src="images/ss01_centralpark.png" alt="新宿中央公園">
+                                <div class="mask">
+                                    <div class="caption"><h3>[西口]<br>新宿中央公園</h3>新宿のナイアガラの滝と呼ばれる滝が<br>あり、自然豊かな公園でおすすめです。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="park" data-category="park">
+                            <div class="img-box">
+                                <img src="images/ss02_gyoen.png" alt="新宿御苑">
+                                <div class="mask">
+                                    <div class="caption"><h3>[南口]<br>新宿御苑</h3>元々皇室の庭園ということもあり荘厳な<br>雰囲気の美しい庭園です。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="park" data-category="park">
+                            <div class="img-box">
+                                <img src="images/ss03_yuhodo.png" alt="新宿遊歩道公園">
+                                <div class="mask">
+                                    <div class="caption"><h3>[東口]<br>新宿遊歩道公園</h3>元々都電の引き込み線があった場所が<br>草花が繁る憩いの路になりました。</div>
+                                </div>
+                            </div>
+                        </li>
+            
+                        <li class="cafe" data-category="cafe">
+                            <div class="img-box">
+                                <img src="images/ss04_jienbara.png" alt="珈琲貴族エジンバラ">
+                                <div class="mask">
+                                    <div class="caption"><h3>[南口]<br>珈琲貴族エジンバラ</h3>珍しい24時間営業の喫茶店百名店で<br>古くから沢山の人に愛されてきました。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cafe" data-category="cafe">
+                            <div class="img-box">
+                                <img src="images/ss05_theknot.png" alt="MORETHAN Bakery">
+                                <div class="mask">
+                                    <div class="caption"><h3>[西口]<br>MORETHAN Bakery</h3>ホテルTHEKNOT一階にあるパン屋さん<br>誰でも焼き立てパンを購入できます。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cafe" data-category="cafe">
+                            <div class="img-box">
+                                <img src="images/ss06_pasuteto.png" alt="喫茶パステト">
+                                <div class="mask">
+                                    <div class="caption"><h3>[東口]<br>喫茶パステト</h3>駅前の3D巨大猫の足元にある喫茶店で<br>創作パフェと珈琲が楽しめます。</div>
+                                </div>
+                            </div>
+                        </li>
+            
+                        <li class="shop" data-category="shop">
+                            <div class="img-box">
+                                <img src="images/ss07_newoman.png" alt="NEWoman">
+                                <div class="mask">
+                                    <div class="caption"><h3>[南口]<br>NEWoman</h3>新しい時代を生きる新しい女性のために<br>というコンセプトの商業施設です。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shop" data-category="shop">
+                            <div class="img-box">
+                                <img src="images/ss08_keio.png" alt="京王百貨店">
+                                <div class="mask">
+                                    <div class="caption"><h3>[西口]<br>京王百貨店</h3>京王線、小田急線から好アクセスで<br>古くから愛されてきた百貨店です。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shop" data-category="shop">
+                            <div class="img-box">
+                                <img src="images/ss09_isetan.png" alt="伊勢丹">
+                                <div class="mask">
+                                    <div class="caption"><h3>[東口]<br>伊勢丹</h3>ハイファッションのスポットとして<br>新宿の顔となっているデパートです。</div>
+                                </div>
+                            </div>
+                        </li>
+        
+                        <li class="leisure" data-category="leisure">
+                            <div class="img-box">
+                                <img src="images/ss10_yoshimoto.png" alt="ルミネtheよしもと">
+                                <div class="mask">
+                                    <div class="caption"><h3>[南口]<br>ルミネtheよしもと</h3>駅近で吉本興業の芸人さんのライブを<br>見ることが出来るのはここだけです。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="leisure" data-category="leisure">
+                            <div class="img-box">
+                                <img src="images/ss11_sompo.png" alt="SOMPO美術館">
+                                <div class="mask">
+                                    <div class="caption"><h3>[西口]<br>SOMPO美術館</h3>損保ジャパンが運営している美術館で<br>ゴッホのひまわりを鑑賞出来ます。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="leisure" data-category="leisure">
+                            <div class="img-box">
+                                <img src="images/ss12_gozira.png" alt="TOHOシネマズ新宿">
+                                <div class="mask">
+                                    <div class="caption"><h3>[東口]<br>TOHOシネマズ新宿</h3>建物から覗くゴジラヘッドは時々光り<br>かなりインパクトがあります！</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--/area2-->
+            </section>
+        </main>
+            <script src="js/menu.js"></script>
+            <script src="js/slideshow.js"></script>
+            <script src="js/filter.js"></script>
+    </body>
+</html>

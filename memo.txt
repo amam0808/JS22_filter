@@ -1,0 +1,71 @@
+公園
+・御苑(南口)
+・中央公園(西口)
+・新宿遊歩道公園(東口)
+
+カフェ・飲食店
+・珈琲貴族エジンバラ(南口)
+・MORETHAN Bakery(西口)
+・喫茶パステト(東口)
+
+ショッピング
+・NEWoman(南口)
+・京王百貨店(西口)
+・伊勢丹(東口)
+
+レジャー施設
+・ルミネtheよしもと(南口)
+・SOMPO美術館(西口)
+・TOHOシネマズ新宿(東口)
+
+
+
+学校資料改変Ver
+<div id="container">
+            <main id="works">
+                <ul class="works">
+                    <li class="park all"><a href="" class="thmb"><img src="images/ss01_centralpark.png" alt="中央公園"></a></li>
+                    <li class="park all"><a href="" class="thmb"><img src="images/ss02_gyoen.png" alt="御苑"></a></li>
+                    <li class="park all"><a href="" class="thmb"><img src="images/ss03_yuhodo.png" alt="遊歩道公園"></a></li>
+                    <li class="cafe all"><a href="" class="thmb"><img src="images/ss04_jienbara.png" alt="ジエンバラ"></a></li>
+                    <li class="cafe all"><a href="" class="thmb"><img src="images/ss05_theknot.png" alt="theknot"></a></li>
+                    <li class="cafe all"><a href="" class="thmb"><img src="images/ss06_pasuteto.png" alt="パステト"></a></li>
+                    <li class="shop all"><a href="" class="thmb"><img src="images/ss07_newoman.png" alt="NEWoman"></a></li>
+                    <li class="shop all"><a href="" class="thmb"><img src="images/ss08_keio.png" alt="京王百貨店"></a></li>
+                    <li class="shop all"><a href="" class="thmb"><img src="images/ss09_isetan.png" alt="伊勢丹"></a></li>
+                </ul>
+            </main>
+            <aside>
+                <nav id="sidenav">
+                    <h3>カテゴリー</h3>
+                    <ul class="sidemenu1">
+                        <li class="all"><a href="#" class="all">All</a></li>
+                        <li class="park"><a href="#" class="park">Park</a></li>
+                        <li class="cafe"><a href="#" class="cafe">Cafe</a></li>
+                        <li class="shop"><a href="#" class="shop">Shop</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+
+        
+// オブジェクトの作成
+const $menuliTag = $(".sidemenu1 li");
+const $photoliTag = $(".works li");
+
+// イベントの設定
+$menuliTag.on("click", function () {
+    // 1.クリックされたメニュー(li)のclassを取得して変数に格納する
+    const className = $(this).attr("class");
+    // 2.一度全ての写真をフェードアウトさせる
+    $photoliTag.each(function () {
+        $(this).animate({ "opacity": "0" }, 500);
+        $(this).hide();
+    // 3.クリックされたliのclass名と同じclass名がついた写真だけを表示する
+    if ($(this).hasClass(className)) {
+        $(this).animate({ "opacity": "1.0"}, 500);
+        $(this).show();
+    }
+    });
+    return false; // リンクを無効にする
+});
